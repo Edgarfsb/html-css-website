@@ -11,7 +11,7 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  padding-top: 3vh;
+  padding: 4vh;
 }
 
 header .header-logo {
@@ -27,7 +27,13 @@ header .header-links ul li a {
   font-size: 18px;
   color: #E5E7EB;
   text-decoration: none;
-  padding: 2vh;
+  padding: 1vw;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 4vh;
 }
 
 label, input {
