@@ -8,6 +8,28 @@ body {
   color: #F9FAF8;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3vh;
+}
+
+header .header-logo {
+  font-size: 24px;
+}
+
+header .header-links ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header .header-links ul li a {
+  font-size: 18px;
+  color: #E5E7EB;
+  text-decoration: none;
+  padding: 2vh;
+}
+
 label, input {
   display: block;
 }
