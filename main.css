@@ -92,13 +92,14 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 4vh 2vw;
+  padding: 4vh 2vw 10vh;
 }
 
 .information-title {
   color: #1F2937;
   font-size: 36px;
   font-weight: bolder;
+  padding-bottom: 2vh;
 }
 
 .information-element ul {
@@ -127,7 +128,7 @@ footer {
 .home {
   display: flex;
   flex-direction: column;
-  padding: 5vh 25vw;
+  padding: 10vh 25vw;
 }
 
 .home .quote-text {
