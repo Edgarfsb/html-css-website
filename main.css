@@ -139,6 +139,39 @@ footer {
   align-self:flex-end;
 }
 
+/* 
+  Call to action styling for Home
+*/
+
+.call-to-action-element {
+  background-color: #F9FAF8;
+  display: flex;
+  justify-content: space-around;
+  padding: 20vh 5vw;
+}
+
+.call-to-action-container {
+  background-color: #3882F6;
+  padding: 5vh 5vw;
+  display: flex;
+  gap: 5vw;
+  border-radius: 1vh;
+}
+
+.call-to-action-button {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  padding: 0 2vw;
+  border: 2;
+  border-color: #F9FAF8;
+  border-radius: 1vh;
+  border-style:solid;
+}
+
+.call-to-action-button:hover {
+  background-color: #0261fc;
+}
+
 label, input {
   display: block;
 }
