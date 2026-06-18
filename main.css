@@ -8,6 +8,10 @@ body {
   color: #F9FAF8;
 }
 
+/* 
+  Header styling
+*/
+
 header {
   display: flex;
   justify-content: space-around;
@@ -30,10 +34,53 @@ header .header-links ul li a {
   padding: 1vw;
 }
 
+/* 
+  Footer styling
+*/
+
 footer {
   display: flex;
   justify-content: space-around;
   padding: 4vh;
+}
+
+/* 
+  Hero element styling
+*/
+
+.hero-element {
+  display: flex;
+  justify-content: center;
+  gap: 10vh;
+  padding: 15vh 22vw;
+}
+
+.hero-text{
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero-subtext {
+  font-size: 18px;
+  color: #E5E7EB;
+  padding-bottom: 2vh;
+}
+
+.hero-text button {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  padding: 1vh 1.5vw;
+  border: 0;
+  border-radius: 1vh;
+  align-self: center;
+}
+
+.hero-text button:hover {
+  background-color: #0261fc;
 }
 
 label, input {
