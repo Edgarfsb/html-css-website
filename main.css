@@ -83,6 +83,43 @@ footer {
   background-color: #0261fc;
 }
 
+/* 
+  Information element styling
+*/
+
+.information-element {
+  background-color: #F9FAF8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4vh 0;
+}
+
+.information-title {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.information-element ul {
+  display: flex;
+}
+
+.information-element ul li {
+  padding: 1vw;
+}
+
+.information-element ul li figure img{
+  border: 3px solid;
+  border-radius: 2vh;
+  border-color: #3882F6;
+}
+
+.information-element ul li figure figcaption {
+  text-align: center;
+  color: #1F2937;
+}
+
 label, input {
   display: block;
 }
