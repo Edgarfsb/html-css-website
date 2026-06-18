@@ -45,7 +45,7 @@ footer {
 }
 
 /* 
-  Hero element styling
+  Hero element styling for Home
 */
 
 .hero-element {
@@ -84,7 +84,7 @@ footer {
 }
 
 /* 
-  Information element styling
+  Information element styling for Home
 */
 
 .information-element {
@@ -92,7 +92,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 4vh 0;
+  padding: 4vh 2vw;
 }
 
 .information-title {
@@ -118,6 +118,24 @@ footer {
 .information-element ul li figure figcaption {
   text-align: center;
   color: #1F2937;
+}
+
+/* 
+  Quote element styling for Home
+*/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 25vw;
+}
+
+.home .quote-text {
+  align-self: center;
+}
+
+.home .quote-author {
+  align-self:flex-end;
 }
 
 label, input {
