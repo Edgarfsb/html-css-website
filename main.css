@@ -406,8 +406,8 @@ Classes for the "Contact Us" section
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
