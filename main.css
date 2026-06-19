@@ -43,10 +43,25 @@ header .header-links ul li a {
   Footer styling
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
-  display: flex;
-  justify-content: space-around;
+  display: inline;
   padding: 4vh;
+}
+
+.footer-element {
+  display: flex;
+  justify-content: space-between;
+  margin: 0vw 8vw;
+}
+
+.footer-element>a {
+  font-size: 18px;
+  color: #E5E7EB;
+  text-decoration: none;
 }
 
 /* 
