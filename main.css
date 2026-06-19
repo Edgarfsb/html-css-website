@@ -394,6 +394,10 @@ Classes for the "Contact Us" section
   justify-content: center;
 }
 
+.destinations h2 {
+    text-align: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
