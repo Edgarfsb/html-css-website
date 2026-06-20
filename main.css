@@ -1,11 +1,16 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #1F2937;
   color: #F9FAF8;
+}
+
+img{
+  border-radius: 0.5rem;
 }
 
 /* 
@@ -38,7 +43,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 4vh;
+  padding: 4vh 0;
 }
 
 header .header-logo {
@@ -67,13 +72,15 @@ html {
 
 footer {
   display: inline;
-  padding: 4vh;
+  padding: 4vh 0;
 }
 
 .footer-element {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   margin: 0vw 8vw;
+  padding: 4vh 8vw;
 }
 
 .footer-element>a {
@@ -90,7 +97,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 10vh;
-  padding: 15vh 22vw;
+  padding: 13vh 10vw;
 }
 
 .hero-text{
@@ -105,13 +112,13 @@ footer {
 .hero-subtext {
   font-size: 18px;
   color: #E5E7EB;
-  padding-bottom: 2vh;
+  padding: 3vh 0;
 }
 
 .hero-text button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 1vh 1.5vw;
+  padding: 1vh 3vw;
   border: 0;
   border-radius: 1vh;
   align-self: center;
@@ -130,14 +137,15 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 4vh 2vw 10vh;
+  padding: 8vh 0 8vh 0;
+  width: 100%;
 }
 
 .information-title {
   color: #1F2937;
   font-size: 36px;
   font-weight: bolder;
-  padding-bottom: 2vh;
+  padding-bottom: 6vh;
 }
 
 .information-element ul {
@@ -145,18 +153,19 @@ footer {
 }
 
 .information-element ul li {
-  padding: 1vw;
+  padding: 2vw;
 }
 
 .information-element ul li figure img{
   border: 3px solid;
-  border-radius: 2vh;
+  border-radius: 0.5rem;
   border-color: #3882F6;
 }
 
 .information-element ul li figure figcaption {
   text-align: center;
   color: #1F2937;
+  margin-top: 1vh;
 }
 
 /* 
@@ -166,7 +175,7 @@ footer {
 .home {
   display: flex;
   flex-direction: column;
-  padding: 10vh 25vw;
+  padding: 8vh 10vw;
 }
 
 .home .quote-text {
@@ -185,24 +194,24 @@ footer {
   background-color: #F9FAF8;
   display: flex;
   justify-content: space-around;
-  padding: 20vh 5vw;
+  padding: 8vh 0;
 }
 
 .call-to-action-container {
   background-color: #3882F6;
-  padding: 5vh 5vw;
+  padding: 6vh 8vw;
   display: flex;
-  gap: 5vw;
-  border-radius: 1vh;
+  gap: 23vw;
+  border-radius: 0.5rem;
 }
 
 .call-to-action-button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 0 2vw;
+  padding: 1vh 3vw;
   border: 2;
   border-color: #F9FAF8;
-  border-radius: 1vh;
+  border-radius: 0.5rem;
   border-style:solid;
 }
 
@@ -248,8 +257,15 @@ Classes for the "Contact Us" section
 .about-stack {
   display: flex;
   justify-content: space-around;
-  padding: 5vh 5vh 10vh;
+  padding: 6vh 12vw;
   gap: 3vw;
+}
+
+.about-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 4vw;
 }
 
 .card-info>p {
@@ -257,7 +273,7 @@ Classes for the "Contact Us" section
 }
 
 .section-title {
-  padding: 7vh;
+  padding: 8vh 3vw;
   background-color: #F9FAF8;
   color: #1F2937;
   align-self: stretch;
@@ -266,10 +282,10 @@ Classes for the "Contact Us" section
 
 .contact-us, .about-container {
   display: flex;
-  padding: 5vh;
   justify-content: center;
-  gap: 10vh;
-  padding: 3vw 10vw;
+  align-items: center;
+  gap: 4vw;
+  padding: 8vh 12vw;
 }
 
 .contact-form {
@@ -281,7 +297,7 @@ Classes for the "Contact Us" section
 .contact-information {
   display: flex;
   justify-content: space-between;
-  gap: 5vh;
+  gap: 4vh;
 }
 
 .form-input {
@@ -305,23 +321,24 @@ Classes for the "Contact Us" section
 .contact-button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 10px;
+  padding: 1.5vh 2vw;
   border: 0;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   align-self: center;
 }
 
 .card-information {
   display: flex;
   flex-direction: column;
-  gap: 9vh;
+  gap: 4vh;
+  margin: 13vh 0vw;
 }
 
 .card {
   display: flex;
   align-items: center;
   gap: 3vh;
-  padding: 3vh;
+  padding: 4vh 2vw 4vh 7vw;
   border: 1px solid #F9FAF8;
   border-radius: 10px;
 }
@@ -340,7 +357,6 @@ Classes for the "Contact Us" section
 .blog-image {
   width: 30vw;
   height: auto;
-  border-radius: 5px;
 }
 
 .blog-content {
