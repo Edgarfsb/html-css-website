@@ -31,17 +31,27 @@ img{
   }
 
   .call-to-action-container {
-    align-items: center;
-    width: 80%;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between;
+    width: 90% !important;
+    gap: 4vh !important;
+    padding: 3vh 4vw !important;
+    box-sizing: border-box;
   }
 
   .call-to-action-text {
-    height: fit-content;
+    height: fit-content !important;
+    flex: 1 !important;
+    text-align: left !important;
   }
 
   .call-to-action-button {
-    height: fit-content;
-    width: fit-content;
+    height: fit-content !important;
+    width: auto !important;
+    white-space: nowrap !important;
+    padding: 1vh 3vw !important;
   }
 
   /* About Page*/
@@ -100,6 +110,8 @@ img{
     width: 100%;
   }
 
+  /*hamburger menu*/
+
   header {
     position: relative;
   }
@@ -149,6 +161,12 @@ img{
     height: calc(40vh - 12vh);
   }
 
+   .label-hamburger {
+    display: block !important;
+    cursor: pointer;
+    color: #F9FAF8;
+  }
+
   /*blog stayling*/
 
   .blog-post,
@@ -174,12 +192,30 @@ img{
     gap: 1.5vh;
   }
 
-  .label-hamburger {
-    display: block !important;
-    cursor: pointer;
-    color: #F9FAF8;
+  /*Destinations page*/
+  .destination-grid{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh 0;
+  }
+
+  .card-products{
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .hero-element-destinations{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    padding: 4vh 0 !important;
+    width: 100% !important;
   }
 }
+ 
+  /* .hero-element-destinations */
+
 
 header {
   display: flex;
@@ -596,6 +632,7 @@ Classes for the "Contact Us" section
   margin-top: 10px;
   font-size: 1rem;
   font-weight: bold;
+  color: #1F2937;
 }
 
 .card-products p {
@@ -622,4 +659,3 @@ Classes for the "Contact Us" section
   padding-top: 11vh;
   color: #1F2937;
 }
-
