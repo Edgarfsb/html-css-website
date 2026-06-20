@@ -13,14 +13,7 @@ img{
   border-radius: 0.5rem;
 }
 
-/* 
-  Header styling
-*/
 @media screen and (max-width: 768px) {
-  /* header .header-links ul{
-    display: flex;
-    flex-direction: column;
-  }
 
   .hero-element {
     display: flex;
@@ -32,86 +25,157 @@ img{
     width: 100%;
   }
 
-  .information-element ul{
+  .information-element ul {
     display: flex;
     flex-direction: column;
-  } */
-  
-header {
-  position: relative;
-}
+  }
 
-.header-links{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .call-to-action-container {
+    align-items: center;
+    width: 80%;
+  }
 
-.menu-hamburger{
-  display: none;
-}
+  .call-to-action-text {
+    height: fit-content;
+  }
 
-.ul-links{
-  width: 100%;
-  background-color: #1F2937;
-  position: absolute;
-  top:12vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 0;
-  overflow:hidden;
-  align-items: center;
-  gap: 1.5rem;
-  padding-right: 2vw;
-  left: 0;
-  padding-top: 4vh;
-  box-sizing: border-box;
+  .call-to-action-button {
+    height: fit-content;
+    width: fit-content;
+  }
 
-  transition: all .3s;
-}
+  /* About Page*/
 
-.link{
-  font-size: 3rem;
-  color: #F9FAF8;
-  font-weight: bolder;
-  text-decoration: none;
-}
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.list-icon{
-  cursor: pointer;
-}
+  .about-img {
+    height: 100%;
+    width: fit-content;
+  }
 
-.menu-hamburger:checked+.ul-links{
+  .about-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-stack .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-stack .card .card-info  p {
+    max-width: 100%;
+  }
+
+  .contact-form label {
+    display: flex;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #subject {
+    width: 100%;
+  }
+
+  #message {
+    width: 100%;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us .card {
+    width: 100%;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  .ul-links {
+    width: 100%;
+    background-color: #1F2937;
+    position: absolute;
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    gap: 1.5rem;
+    padding-right: 2vw;
+    left: 0;
+    padding-top: 4vh;
+    box-sizing: border-box;
+
+    transition: all .3s;
+  }
+
+  .link {
+    font-size: 3rem;
+    color: #F9FAF8;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .list-icon {
+    cursor: pointer;
+  }
+
+  .menu-hamburger:checked+.ul-links {
     height: calc(40vh - 12vh);
-}
+  }
 
   /*blog stayling*/
-  
-  .blog-post, .blog-post.dark{
+
+  .blog-post,
+  .blog-post.dark {
     flex-direction: column !important;
     padding: 4vh 5vw;
   }
 
-  .blog-image{
+  .blog-image {
     width: 100% !important;
     height: auto;
     max-height: 250px;
     object-fit: cover;
   }
 
-  .blog-content{
+  .blog-content {
     padding: 3vh 0 0 0 !important;
     gap: 1.5vh;
   }
 
-  .blog-content.dark{
+  .blog-content.dark {
     padding: 0 0 3vh 0;
     gap: 1.5vh;
   }
 
-  .label-hamburger{
-    display: block !important; 
+  .label-hamburger {
+    display: block !important;
     cursor: pointer;
     color: #F9FAF8;
   }
@@ -163,6 +227,7 @@ footer {
 
 .footer-element {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
   margin: 0vw 8vw;
@@ -173,6 +238,7 @@ footer {
   font-size: 18px;
   color: #E5E7EB;
   text-decoration: none;
+  align-self: flex-end;
 }
 
 /* 
@@ -187,7 +253,11 @@ footer {
 }
 
 .hero-text{
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vh;
+  margin-left: 10vw;
 }
 
 .hero-title {
@@ -204,10 +274,9 @@ footer {
 .hero-text button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 1vh 3vw;
+  padding: 1vh 2vw;
   border: 0;
   border-radius: 1vh;
-  align-self: center;
 }
 
 .hero-text button:hover {
@@ -287,7 +356,7 @@ footer {
   background-color: #3882F6;
   padding: 6vh 8vw;
   display: flex;
-  gap: 23vw;
+  gap: 10vw;
   border-radius: 0.5rem;
 }
 
@@ -295,7 +364,6 @@ footer {
   color: #F9FAF8;
   background-color: #3882F6;
   padding: 1vh 3vw;
-  border: 2;
   border-color: #F9FAF8;
   border-radius: 0.5rem;
   border-style:solid;
@@ -484,7 +552,6 @@ Classes for the "Contact Us" section
 .hero, .destinations, .hero-element-destinations{
   padding: 4vh 10vw;
   background-color: #F9FAF8;
-  color: #1F2937;
 }
 
 .blog-header {
@@ -500,38 +567,38 @@ Classes for the "Contact Us" section
 }
 
 .destination-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 9vh 6vw;
-    max-width: 1100px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 9vh 6vw;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .card-products {
-    width: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .card-products img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border: 5px solid #3b82f6;
-    border-radius: 18px;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border: 5px solid #3b82f6;
+  border-radius: 18px;
 }
 
 .card-products h3 {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: bold;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .card-products p {
-    display: none;
+  display: none;
 }
 
 .destination-title{
@@ -539,6 +606,7 @@ Classes for the "Contact Us" section
   justify-content: center;
   align-items: center;
   margin-bottom: 8vh;
+  color: #1F2937;
 }
 
 .hero-content{
@@ -551,40 +619,6 @@ Classes for the "Contact Us" section
   margin:0 auto;
   max-width: 800px;
   padding-top: 11vh;
+  color: #1F2937;
 }
 
-.hero-container{
-  background-color: #3882F6;
-  padding: 6vh 8vw;
-  display: flex;
-  gap: 23px;
-  border-radius: 0.5rem;
-  align-items: center;
-  gap: 4vw;
-}
-
-.hero-title{
-  font-size: 36px;
-  color: #F9FAF8;
-  font-weight: bolder;
-}
-
-.hero-subtext-destination{
-  font-size: 18px;
-  color: #E5E7EB;
-  padding: 2vh 0 0 0;
-}
-
-.hero-container button{
-  color: #F9FAF8;
-  background-color: #3882F6;
-  padding: 1vh 3vw;
-  border: 2px solid #F9FAF8;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.hero-container button:hover{
-  background-color: #0261fc;
-}
