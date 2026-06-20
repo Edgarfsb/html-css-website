@@ -395,7 +395,7 @@ Classes for the "Contact Us" section
 }
 
 /*Classes for the products section*/
-.hero, .destinations, .hero-element{
+.hero, .destinations, .hero-element-destinations{
   padding: 4vh 10vw;
   background-color: #F9FAF8;
   color: #1F2937;
@@ -474,7 +474,7 @@ Classes for the "Contact Us" section
   gap: 23px;
   border-radius: 0.5rem;
   align-items: center;
-  width: 100%;
+  gap: 4vw;
 }
 
 .hero-title{
@@ -483,7 +483,7 @@ Classes for the "Contact Us" section
   font-weight: bolder;
 }
 
-.hero-subtext{
+.hero-subtext-destination{
   font-size: 18px;
   color: #E5E7EB;
   padding: 2vh 0 0 0;
