@@ -418,8 +418,9 @@ Classes for the "Contact Us" section
 .about-text{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
   margin-right: 4vw;
+  gap: 2vh;
 }
 
 .card-info>p {
