@@ -137,7 +137,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 8vh 0 8vh 0;
+  padding: 8vh 0;
   width: 100%;
 }
 
@@ -257,7 +257,7 @@ Classes for the "Contact Us" section
 .about-stack {
   display: flex;
   justify-content: space-around;
-  padding: 6vh 12vw;
+  padding: 6vh 10vw;
   gap: 3vw;
 }
 
@@ -331,14 +331,17 @@ Classes for the "Contact Us" section
   display: flex;
   flex-direction: column;
   gap: 4vh;
-  margin: 13vh 0vw;
+  margin: 10vh 0vw;
 }
 
 .card {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  text-align: left;
+  width:33vw;
   gap: 3vh;
-  padding: 4vh 2vw 4vh 7vw;
+  padding: 4vh 2vw ;
   border: 1px solid #F9FAF8;
   border-radius: 10px;
 }
@@ -391,6 +394,13 @@ Classes for the "Contact Us" section
   padding: 5vh 10vw 5vh 4vw;
 }
 
+/*Classes for the products section*/
+.hero, .destinations, .hero-element{
+  padding: 4vh 10vw;
+  background-color: #F9FAF8;
+  color: #1F2937;
+}
+
 .blog-header {
   display: flex;
   justify-content: center;
@@ -406,13 +416,13 @@ Classes for the "Contact Us" section
 .destination-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px 40px;
+    justify-content: space-between;
+    gap: 9vh 6vw;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.card {
+.card-products {
     width: 160px;
     display: flex;
     flex-direction: column;
@@ -420,7 +430,7 @@ Classes for the "Contact Us" section
     text-align: center;
 }
 
-.card img {
+.card-products img {
     width: 130px;
     height: 130px;
     object-fit: cover;
@@ -428,12 +438,67 @@ Classes for the "Contact Us" section
     border-radius: 18px;
 }
 
-.card h3 {
+.card-products h3 {
     margin-top: 10px;
     font-size: 1rem;
     font-weight: bold;
 }
 
-.card p {
+.card-products p {
     display: none;
+}
+
+.destination-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8vh;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:5vh;
+  margin:0 auto;
+  max-width: 800px;
+  padding-top: 11vh;
+}
+
+.hero-container{
+  background-color: #3882F6;
+  padding: 6vh 8vw;
+  display: flex;
+  gap: 23px;
+  border-radius: 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-title{
+  font-size: 36px;
+  color: #F9FAF8;
+  font-weight: bolder;
+}
+
+.hero-subtext{
+  font-size: 18px;
+  color: #E5E7EB;
+  padding: 2vh 0 0 0;
+}
+
+.hero-container button{
+  color: #F9FAF8;
+  background-color: #3882F6;
+  padding: 1vh 3vw;
+  border: 2px solid #F9FAF8;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.hero-container button:hover{
+  background-color: #0261fc;
 }
