@@ -6,75 +6,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel = "icon" type = "image/png" href = "./images/logo.png">
+    <link rel="icon" type="image/png" href="./images/logo.png">
     <link rel="stylesheet" href="./main.css">
     <title>SeaFairing - Find Your Jouney</title>
 </head>
 <body>
     <header>
-            <div class="header-logo">
-                <picture>
-                    <img src="./images/logo.png" height="20px">
-                </picture>
-                <b>SeaFairing</b>
-            </div>
-            <nav class="header-links">
-                <ul>
-                    <li class="header-link-one">
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li class="header-link-two">
-                        <a href="./pages/Products.HTML">Destinations</a>
-                    </li>
-                    <li class="header-link-three">
-                        <a href="./pages/blog.html">Blog</a>
-                    </li>
-                    <li class="header-link-four">
-                        <a href="./pages/about.html">About</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header-logo">
+            <picture><img src="./images/logo.png" height="20px"></picture>
+            <b>SeaFairing</b>
+        </div>
+        <nav class="header-links">
+            <label class=label-hamburger for="menu-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 
+                        1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" 
+                    />
+                </svg>
+            </label>
+            <input class="menu-hamburger" type="checkbox" name="" id="menu-hamburger">
+            <ul class="ul-links">
+                <li class="header-link-one">
+                    <a href="./index.html" class="link">Home</a>
+                </li>
+                <li class="header-link-two">
+                    <a href="./pages/Products.HTML" class="link">Destinations</a>
+                </li>
+                <li class="header-link-three">
+                    <a href="./pages/blog.html" class="link">Blog</a>
+                </li>
+                <li class="header-link-four">
+                    <a href="./pages/about.html" class="link">About</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="hero-element">
             <div class="hero-text">
-                <h1 class="hero-title">Begin your new adventure</h1>
-                <p class="hero-subtext">
+                <h1 class="hero-title"><strong>Begin your new adventure</strong></h1>
+                <p class="hero-subtext-destination">
                     Sign up with SeaFairing™ and we will help you find your new adventure.
-                    From the beaches of Brazil to the mountains of Nepal, you will not regret our services, all at affordable prices.
+                    From the beaches of Brazil to the mountains of Nepal, you will not regret our services, all at
+                    affordable prices.
                 </p>
                 <button type="button">
                     <b>Sign up</b>
                 </button>
             </div>
             <picture class="hero-image">
-                <img src="./images/hero.png" alt="Image of a cruise ship near a shore" title="Cruise ship" width="500" height="250">
+                <img src="./images/hero.png" alt="Image of a cruise ship near a shore" title="Cruise ship" width="700" height="300">
             </picture>
         </section>
         <section class="information-element">
-            <h2 class="information-title">What We Offer</h2>
+            <h2 class="information-title"><strong>What We Offer</strong></h2>
             <ul>
                 <li>
                     <figure class="information-image-one">
-                        <img src="./images/consultation.png" alt="Image of Lisbon, Portugal" title="Lisbon, Portugal" width="200" height="200">
-                        <figcaption>Consultation</figcaption>
+                        <img src="./images/consultation.png" alt="Two people having a meeting" title="Consulting" width="200" height="200">
+                        <figcaption>Consulting</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="information-image-two">
-                        <img src="./images/travel.png" alt="Image of Madrid, Spain" title="Madrid, Spain" width="200" height="200">
+                        <img src="./images/travel.png" alt="An airplane taking off" title="Transport Booking" width="200" height="200">
                         <figcaption>Transport Bookings</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="information-image-three">
-                        <img src="./images/accomodation.png" alt="Image of Dublin, Ireland" title="Dublin, Ireland" width="200" height="200">
-                        <figcaption>Accomodation Bookings</figcaption>
+                        <img src="./images/accomodation.png" alt="Fancy Hotel" title="Accommodation" width="200" height="200">
+                        <figcaption>Accommodation Bookings</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="information-image-four">
-                        <img src="./images/tour.png" alt="Image of New Delhi, India" title="New Delhi, India" width="200" height="200">
+                        <img src="./images/tour.png" alt="Bus tour through the city" title="Recreation Events" width="200" height="200">
                         <figcaption>Recreation events</figcaption>
                     </figure>
                 </li>
@@ -84,10 +92,10 @@
             <p class="quote-text">
                 "Eclipse first and the rest nowhere"
             </p>
-            <p class="quote-author">
-                O'Kelly, Dennis 
-            </p>
-        </blockquote>
+            <strong><p class="quote-author">
+                - O'Kelly, Dennis
+            </p></strong>
+        </section>
         <section class="call-to-action-element">
             <div class="call-to-action-container">
                 <div class="call-to-action-text">

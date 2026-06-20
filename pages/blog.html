@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel = "icon" type = "image/png" href = "../images/logo.png">
+  <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="stylesheet" href="../main.css">
   <title>Blog</title>
 </head>
-
 <body>
   <header>
     <div class="header-logo">
@@ -19,18 +17,27 @@
       <b>SeaFairing</b>
     </div>
     <nav class="header-links">
-      <ul>
+      <label class=label-hamburger for="menu-hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 
+            1H3a.5.5 0 0 1-.5-.5" 
+          />
+        </svg>
+      </label>
+      <input class="menu-hamburger" type="checkbox" name="" id="menu-hamburger">
+      <ul class="ul-links">
         <li class="header-link-one">
-          <a href="../index.html">Home</a>
+          <a href="../index.html" class="link">Home</a>
         </li>
         <li class="header-link-two">
-          <a href="../pages/Products.HTML">Destinations</a>
+          <a href="../pages/Products.HTML" class="link">Destinations</a>
         </li>
         <li class="header-link-three">
-          <a href="../pages/blog.html">Blog</a>
+          <a href="../pages/blog.html" class="link">Blog</a>
         </li>
         <li class="header-link-four">
-          <a href="../pages/about.html">About</a>
+          <a href="../pages/about.html" class="link">About</a>
         </li>
       </ul>
     </nav>
@@ -42,13 +49,12 @@
     <section class="blog-container">
       <article class="blog-post">
         <picture>
-          <img src="../images/packing.png"
-            alt="Photo of a smiling woman closing an olive green suitcase in a hotel room overlooking Paris, with packing cubes 
-            arranged on a wooden table next to her."
-            class="blog-image">
+          <img src="../images/packing.png" alt="Photo of a smiling woman closing an olive green suitcase in a hotel room overlooking Paris, with packing cubes 
+            arranged on a wooden table next to her." class="blog-image"
+          >
         </picture>
         <div class="blog-content">
-          <h2>Master the Art of Packing Light</h2>
+          <h2><strong>Master the Art of Packing Light</strong></h2>
           <p>
             The ultimate travel hack? Leaving the "just in case" items behind. Rolling your clothes instead of folding
             them, choosing versatile layers, and sticking to a strict color palette will save you space, time, and
@@ -61,11 +67,11 @@
       <article class="blog-post dark">
         <picture>
           <img src="../images/data.jpeg" alt="Side close-up of a smiling man looking at a smartphone displaying a global map 
-          and data signals, overlooking a coastal cityscape and ancient ruins in the distance." 
-          class="blog-image">
+            and data signals, overlooking a coastal cityscape and ancient ruins in the distance." class="blog-image"
+          >
         </picture>
         <div class="blog-content dark">
-          <h2>Unlimited Data, Limitless Adventures</h2>
+          <h2><strong>Unlimited Data, Limitless Adventures</strong></h2>
           <p>
             True travel freedom means exploring off the beaten path without losing your way. Holafly transforms how we
             navigate the globe by providing instant, reliable internet access right on your smartphone. Whether you are
@@ -78,11 +84,11 @@
       <article class="blog-post">
         <picture>
           <img src="../images/itinerary.jpeg" alt="A traveler sits in a cafe on a picturesque cobbled street, writing in 
-          an open journal and looking at a tablet, with a city map and compass on the table." 
-          class="blog-image">
+            an open journal and looking at a tablet, with a city map and compass on the table." class="blog-image"
+          >
         </picture>
         <div class="blog-content">
-          <h2>The Secret to Crafting the Perfect Travel Itinerary</h2>
+          <h2><strong>Secret to Crafting the Perfect Travel Itinerary</strong></h2>
           <p>
             Planning a trip is exciting, but trying to see everything often leads to seeing nothing at all. The key to a
             memorable journey is balancing structured plans with open, unscheduled time. By focusing on one or two main
@@ -102,5 +108,4 @@
     </section>
   </footer>
 </body>
-
 </html>

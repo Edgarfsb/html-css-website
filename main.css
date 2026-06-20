@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,15 +9,11 @@ body {
   color: #F9FAF8;
 }
 
-/* 
-  Header styling
-*/
+img{
+  border-radius: 0.5rem;
+}
 
 @media screen and (max-width: 768px) {
-  header .header-links ul{
-    display: flex;
-    flex-direction: column;
-  }
 
   .hero-element {
     display: flex;
@@ -28,17 +25,203 @@ body {
     width: 100%;
   }
 
-  .information-element ul{
+  .information-element ul {
     display: flex;
     flex-direction: column;
   }
+
+  .call-to-action-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between;
+    width: 90% !important;
+    gap: 4vh !important;
+    padding: 3vh 4vw !important;
+    box-sizing: border-box;
+  }
+
+  .call-to-action-text {
+    height: fit-content !important;
+    flex: 1 !important;
+    text-align: left !important;
+  }
+
+  .call-to-action-button {
+    height: fit-content !important;
+    width: auto !important;
+    white-space: nowrap !important;
+    padding: 1vh 3vw !important;
+  }
+
+  /* About Page*/
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-img {
+    height: 100%;
+    width: fit-content;
+  }
+
+  .about-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-stack .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-stack .card .card-info  p {
+    max-width: 100%;
+  }
+
+  .contact-form label {
+    display: flex;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #subject {
+    width: 100%;
+  }
+
+  #message {
+    width: 100%;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us .card {
+    width: 100%;
+  }
+
+  /*hamburger menu*/
+
+  header {
+    position: relative;
+  }
+
+  .header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  .ul-links {
+    width: 100%;
+    background-color: #1F2937;
+    position: absolute;
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    gap: 1.5rem;
+    padding-right: 2vw;
+    left: 0;
+    padding-top: 4vh;
+    box-sizing: border-box;
+
+    transition: all .3s;
+  }
+
+  .link {
+    font-size: 3rem;
+    color: #F9FAF8;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .list-icon {
+    cursor: pointer;
+  }
+
+  .menu-hamburger:checked+.ul-links {
+    height: calc(40vh - 12vh);
+  }
+
+   .label-hamburger {
+    display: block !important;
+    cursor: pointer;
+    color: #F9FAF8;
+  }
+
+  /*blog stayling*/
+
+  .blog-post,
+  .blog-post.dark {
+    flex-direction: column !important;
+    padding: 4vh 5vw;
+  }
+
+  .blog-image {
+    width: 100% !important;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .blog-content {
+    padding: 3vh 0 0 0 !important;
+    gap: 1.5vh;
+  }
+
+  .blog-content.dark {
+    padding: 0 0 3vh 0;
+    gap: 1.5vh;
+  }
+
+  /*Destinations page*/
+  .destination-grid{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh 0;
+  }
+
+  .card-products{
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .hero-element-destinations{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    padding: 4vh 0 !important;
+    width: 100% !important;
+  }
 }
+ 
+  /* .hero-element-destinations */
+
 
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 4vh;
+  padding: 4vh 0;
 }
 
 header .header-logo {
@@ -57,6 +240,14 @@ header .header-links ul li a {
   padding: 1vw;
 }
 
+.menu-hamburger{
+  display: none;
+}
+
+.label-hamburger{
+  display: none;
+}
+
 /* 
   Footer styling
 */
@@ -67,19 +258,23 @@ html {
 
 footer {
   display: inline;
-  padding: 4vh;
+  padding: 4vh 0;
 }
 
 .footer-element {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   margin: 0vw 8vw;
+  padding: 4vh 8vw;
 }
 
 .footer-element>a {
   font-size: 18px;
   color: #E5E7EB;
   text-decoration: none;
+  align-self: flex-end;
 }
 
 /* 
@@ -90,11 +285,15 @@ footer {
   display: flex;
   justify-content: center;
   gap: 10vh;
-  padding: 15vh 22vw;
+  padding: 13vh 10vw;
 }
 
 .hero-text{
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vh;
+  margin-left: 10vw;
 }
 
 .hero-title {
@@ -105,16 +304,15 @@ footer {
 .hero-subtext {
   font-size: 18px;
   color: #E5E7EB;
-  padding-bottom: 2vh;
+  padding: 3vh 0;
 }
 
 .hero-text button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 1vh 1.5vw;
+  padding: 1vh 2vw;
   border: 0;
   border-radius: 1vh;
-  align-self: center;
 }
 
 .hero-text button:hover {
@@ -130,14 +328,15 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 4vh 2vw 10vh;
+  padding: 8vh 0;
+  width: 100%;
 }
 
 .information-title {
   color: #1F2937;
   font-size: 36px;
   font-weight: bolder;
-  padding-bottom: 2vh;
+  padding-bottom: 6vh;
 }
 
 .information-element ul {
@@ -145,18 +344,19 @@ footer {
 }
 
 .information-element ul li {
-  padding: 1vw;
+  padding: 2vw;
 }
 
 .information-element ul li figure img{
   border: 3px solid;
-  border-radius: 2vh;
+  border-radius: 0.5rem;
   border-color: #3882F6;
 }
 
 .information-element ul li figure figcaption {
   text-align: center;
   color: #1F2937;
+  margin-top: 1vh;
 }
 
 /* 
@@ -166,7 +366,7 @@ footer {
 .home {
   display: flex;
   flex-direction: column;
-  padding: 10vh 25vw;
+  padding: 8vh 10vw;
 }
 
 .home .quote-text {
@@ -185,24 +385,23 @@ footer {
   background-color: #F9FAF8;
   display: flex;
   justify-content: space-around;
-  padding: 20vh 5vw;
+  padding: 8vh 0;
 }
 
 .call-to-action-container {
   background-color: #3882F6;
-  padding: 5vh 5vw;
+  padding: 6vh 8vw;
   display: flex;
-  gap: 5vw;
-  border-radius: 1vh;
+  gap: 10vw;
+  border-radius: 0.5rem;
 }
 
 .call-to-action-button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 0 2vw;
-  border: 2;
+  padding: 1vh 3vw;
   border-color: #F9FAF8;
-  border-radius: 1vh;
+  border-radius: 0.5rem;
   border-style:solid;
 }
 
@@ -248,8 +447,16 @@ Classes for the "Contact Us" section
 .about-stack {
   display: flex;
   justify-content: space-around;
-  padding: 5vh 5vh 10vh;
+  padding: 6vh 10vw;
   gap: 3vw;
+}
+
+.about-text{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin-right: 4vw;
+  gap: 2vh;
 }
 
 .card-info>p {
@@ -257,7 +464,7 @@ Classes for the "Contact Us" section
 }
 
 .section-title {
-  padding: 7vh;
+  padding: 8vh 3vw;
   background-color: #F9FAF8;
   color: #1F2937;
   align-self: stretch;
@@ -266,10 +473,10 @@ Classes for the "Contact Us" section
 
 .contact-us, .about-container {
   display: flex;
-  padding: 5vh;
   justify-content: center;
-  gap: 10vh;
-  padding: 3vw 10vw;
+  align-items: center;
+  gap: 4vw;
+  padding: 8vh 12vw;
 }
 
 .contact-form {
@@ -281,7 +488,7 @@ Classes for the "Contact Us" section
 .contact-information {
   display: flex;
   justify-content: space-between;
-  gap: 5vh;
+  gap: 4vh;
 }
 
 .form-input {
@@ -305,23 +512,27 @@ Classes for the "Contact Us" section
 .contact-button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 10px;
+  padding: 1.5vh 2vw;
   border: 0;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   align-self: center;
 }
 
 .card-information {
   display: flex;
   flex-direction: column;
-  gap: 9vh;
+  gap: 4vh;
+  margin: 10vh 0vw;
 }
 
 .card {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  text-align: left;
+  width:33vw;
   gap: 3vh;
-  padding: 3vh;
+  padding: 4vh 2vw ;
   border: 1px solid #F9FAF8;
   border-radius: 10px;
 }
@@ -340,7 +551,6 @@ Classes for the "Contact Us" section
 .blog-image {
   width: 30vw;
   height: auto;
-  border-radius: 5px;
 }
 
 .blog-content {
@@ -375,6 +585,12 @@ Classes for the "Contact Us" section
   padding: 5vh 10vw 5vh 4vw;
 }
 
+/*Classes for the products section*/
+.hero, .destinations, .hero-element-destinations{
+  padding: 4vh 10vw;
+  background-color: #F9FAF8;
+}
+
 .blog-header {
   display: flex;
   justify-content: center;
@@ -388,25 +604,58 @@ Classes for the "Contact Us" section
 }
 
 .destination-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 9vh 6vw;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
-    .destination-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.card-products {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-    .destination-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.card-products img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border: 5px solid #3b82f6;
+  border-radius: 18px;
 }
 
-@media (max-width: 480px) {
-    .destination-grid {
-        grid-template-columns: 1fr;
-    }
+.card-products h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1F2937;
+}
+
+.card-products p {
+  display: none;
+}
+
+.destination-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8vh;
+  color: #1F2937;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:5vh;
+  margin:0 auto;
+  max-width: 800px;
+  padding-top: 11vh;
+  color: #1F2937;
 }
