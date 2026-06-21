@@ -487,7 +487,8 @@ Classes for the "Contact Us" section
 
 .contact-us, .about-container {
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  align-items:flex-start;
   gap: 4vw;
   padding: 13vh 10vw;
 }
@@ -540,7 +541,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 4vh;
-  margin: 10vh 0vw;
+  margin: 3vh 0;
 }
 
 .card {
