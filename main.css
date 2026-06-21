@@ -15,6 +15,14 @@ img{
 
 @media screen and (max-width: 768px) {
 
+  .footer-big {
+    display: none;
+  }
+
+  .footer-element .footer-small {
+    visibility: visible;
+  }
+
   .hero-element {
     display: flex;
     flex-direction: column;
@@ -31,27 +39,20 @@ img{
   }
 
   .call-to-action-container {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between;
-    width: 90% !important;
-    gap: 4vh !important;
-    padding: 3vh 4vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 100%;
+    padding: 3vh 4vw;
     box-sizing: border-box;
   }
 
-  .call-to-action-text {
-    height: fit-content !important;
-    flex: 1 !important;
-    text-align: left !important;
-  }
-
   .call-to-action-button {
-    height: fit-content !important;
-    width: auto !important;
-    white-space: nowrap !important;
-    padding: 1vh 3vw !important;
+    height: fit-content;
+    width: auto;
+    white-space: nowrap;
+    padding: 1vh 3vw;
   }
 
   /* About Page*/
@@ -61,9 +62,9 @@ img{
     flex-direction: column;
   }
 
-  .about-img {
+  .about-img img{
     height: 100%;
-    width: fit-content;
+    width: 100%;
   }
 
   .about-stack {
@@ -104,6 +105,10 @@ img{
   .contact-us {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact-container .contact-us {
+    align-items: center;
   }
 
   .contact-us .card {
@@ -277,6 +282,10 @@ footer {
   align-self: flex-end;
 }
 
+.footer-small {
+  visibility: hidden;
+}
+
 /* 
   Hero element styling for Home
 */
@@ -293,7 +302,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 2vh;
-  margin-left: 10vw;
 }
 
 .hero-title {
@@ -366,7 +374,7 @@ footer {
 .home {
   display: flex;
   flex-direction: column;
-  padding: 8vh 10vw;
+  padding: 8vh 20vw;
 }
 
 .home .quote-text {
@@ -374,7 +382,7 @@ footer {
 }
 
 .home .quote-author {
-  align-self:flex-end;
+  text-align:right;
 }
 
 /* 
@@ -383,23 +391,22 @@ footer {
 
 .call-to-action-element {
   background-color: #F9FAF8;
-  display: flex;
-  justify-content: space-around;
-  padding: 8vh 0;
+  padding: 8vh 4vw;
 }
 
 .call-to-action-container {
   background-color: #3882F6;
   padding: 6vh 8vw;
   display: flex;
-  gap: 10vw;
+  justify-content:space-evenly;
+  align-items: center;
   border-radius: 0.5rem;
 }
 
 .call-to-action-button {
   color: #F9FAF8;
   background-color: #3882F6;
-  padding: 1vh 3vw;
+  padding: 1vh 2vw;
   border-color: #F9FAF8;
   border-radius: 0.5rem;
   border-style:solid;
@@ -471,12 +478,18 @@ Classes for the "Contact Us" section
   text-align: center;
 }
 
+.contact-title {
+  font-size: 36px;
+  padding: 4vh 3vw;
+  align-self: stretch;
+  text-align: center;
+}
+
 .contact-us, .about-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 4vw;
-  padding: 8vh 12vw;
+  padding: 13vh 10vw;
 }
 
 .contact-form {
@@ -498,6 +511,11 @@ Classes for the "Contact Us" section
 
 .form-input {
   width: 44vh;
+}
+
+input::placeholder {
+  color: #1F2937;
+  opacity: 0.5;
 }
 
 .contact-form>.form-field>.form-input {
@@ -545,7 +563,7 @@ Classes for the "Contact Us" section
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 3vh 8vw;
+  padding: 5vh 8vw;
 }
 
 .blog-image {
@@ -566,7 +584,7 @@ Classes for the "Contact Us" section
   color: #E5E7EB;
   display: flex;
   flex-direction: row-reverse;
-  padding: 3vh 9vw;
+  padding: 5vh 9vw;
 }
 
 .blog-content h2 {
@@ -587,10 +605,11 @@ Classes for the "Contact Us" section
 
 /*Classes for the products section*/
 .hero, .destinations, .hero-element-destinations{
-  padding: 4vh 10vw;
+  padding: 2vh 8vw;
   background-color: #F9FAF8;
 }
 
+/* DEPRECATED
 .blog-header {
   display: flex;
   justify-content: center;
@@ -602,6 +621,7 @@ Classes for the "Contact Us" section
   padding-top: 8vh;
   padding-bottom: 6vh;
 }
+*/
 
 .destination-grid {
   display: flex;
