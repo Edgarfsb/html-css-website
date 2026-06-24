@@ -226,7 +226,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 4vh 0;
+  padding: 4vh;
+  gap: 35vw;
 }
 
 header .header-logo {
@@ -336,7 +337,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 8vh 0;
+  padding: 8vh 0vw;
   width: 100%;
 }
 
@@ -352,7 +353,7 @@ footer {
 }
 
 .information-element ul li {
-  padding: 2vw;
+  padding: 2vh 4.3vw;
 }
 
 .information-element ul li figure img{
@@ -391,7 +392,7 @@ footer {
 
 .call-to-action-element {
   background-color: #F9FAF8;
-  padding: 8vh 4vw;
+  padding: 8vh 10vw;
 }
 
 .call-to-action-container {
@@ -628,9 +629,10 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 9vh 6vw;
-  max-width: 1100px;
+  gap: 9vh 3vw;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 1.5vw;
 }
 
 .card-products {
